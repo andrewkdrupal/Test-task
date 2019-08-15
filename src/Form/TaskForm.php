@@ -15,31 +15,31 @@ class TaskForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
 
     $form['firstName'] = [
-      '#title' => $this->t('First Name'),
+      '#title' => $this->t('First Name: '),
       '#type' => 'textfield',
       '#required' => TRUE,
     ];
 
     $form['lastName'] = [
-      '#title' => $this->t('Last Name'),
+      '#title' => $this->t('Last Name: '),
       '#type' => 'textfield',
       '#required' => TRUE,
     ];
 
     $form['subject'] = [
-      '#title' => $this->t('Subject'),
+      '#title' => $this->t('Subject: '),
       '#type' => 'textfield',
       '#required' => TRUE,
     ];
 
     $form['message'] = [
-      '#title' => $this->t('Message'),
+      '#title' => $this->t('Message: '),
       '#type' => 'textarea',
       '#required' => TRUE,
     ];
 
     $form['email'] = [
-      '#title' => $this->t('Email'),
+      '#title' => $this->t('E-mail: '),
       '#type' => 'email',
       '#required' => TRUE,
     ];
