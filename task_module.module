@@ -1,0 +1,13 @@
+<?php
+
+function task_module_mail($key, &$message, $params) {
+	$options = array(
+	'langcode' => $message['langcode'],
+	);
+
+	if ($key == 'send_email') {
+      $message['from'] = \Drupal::config('system.site')->get('mail');
+      $message['body'][] = $params['message'];
+      $message['subject'] = t('General mail: @subject', ['@subject' => $params['subject']], $options);
+    }
+  }

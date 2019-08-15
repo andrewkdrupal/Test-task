@@ -1,0 +1,5 @@
+name: 'task_module'
+type: module
+description: 'Module to send emails'
+core: 8.x
+package: 'Custom'

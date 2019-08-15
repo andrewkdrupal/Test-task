@@ -1,0 +1,7 @@
+task_form:
+  path: '/task_module'
+  defaults:
+    _form: 'Drupal\task_module\Form\TaskForm'
+    _title: 'Form'
+  requirements:
+    _permission: 'access content'
